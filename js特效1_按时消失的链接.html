@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>js特效_1 按时消失的链接</title>
+        <style type="text/css">
+            #href-link{
+                position: absolute;
+                visibility: visible;
+                background-color: black;
+            }
+            #href-link >a{
+                target:_blank;
+                visibility:visible;
+            }
+        </style>
+        
+        <script type="text/javascript">
+            var backgroundcolor="black";
+            var flashColor="yellow";
+            var flag=0;
+            function flash(){      <!--颜色交替变化-->
+                if(!flag){
+                    document.getElementById("a-href").style.backgroundColor=flashColor;
+                    flag=1;
+                }
+                else{
+                     document.getElementById("a-href").style.backgroundColor=backgroundcolor;
+                    flag=0;
+                }
+                            }
+            function hiddenSpan(){
+                document.getElementById("href-link").style.visibility="hidden";
+                document.getElementById('a-href').style.visibility='hidden';
+            }
+            function setMessage(){
+                for(var i=0;i<5;i++)
+                    setInterval("flash()",1000);
+                setTimeout("hiddenSpan()",5000);
+            }
+           document.all
+                    window.onload=setMessage;
+        </script>
+    </head>
+    <body>
+        <span id="href-link"><a id="a-href" href="#">ji特效按时消失的链接</a></span>
+    </body>
+</html>
