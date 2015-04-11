@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>网页中的loading条</title>
+        <style type="text/css">
+            #myLoading{
+                border: 2px solid black;
+                width: 400px;
+                height:200px;
+            }
+            p{
+                font-family: serif;
+            }
+            [name="loading"]{
+                size:46;
+                font-family: fantasy;
+                font-weight: bolder;
+                color:#800080;    
+            }
+            [name=percent]{
+                text-align: center;
+                border-style: none;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="myLoading">
+            <p>载入中，请稍等</p>
+            <form name="loading">
+                <input name=chart type="text" size=42/>
+                <input name=percent type="text" size=42/>
+            </form>
+       </div>
+       <script type="text/javascript">
+           var bar=0;
+           var line="||";
+           var amount="||";
+           count();
+           function count(){
+               bar+=2;
+               amount+=line;
+               document.loading.chart.value=amount;
+               document.loading.percent.value=bar+"%";
+               if(bar<=99)setTimeout("count()",100);
+               else window.location="http://www.baidu.com";
+           }
+        </script>
+    </body>
+</html>
