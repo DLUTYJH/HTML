@@ -1,0 +1,35 @@
+#header{
+    margin-top: 4px;
+    margin-left: 150px;
+    padding-left: 5px;
+    width: 971px;
+    height: 33px;
+    background-color: #E3E3E3;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+}
+#header #header-nav{
+    width: 210px;
+    height: 31px;
+    margin-left: 760px;
+    margin-top: -30px;
+}
+#header #header-nav a:link,#header #header-nav a:visited{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+#header #header-nav a:hover{
+    text-decoration: underline;
+    color: darkred;
+}
+#header #header-nav a:active,#header #header-nav a:focus{
+    text-decoration: underline;
+    color: darkred;
+}
+#header-item-logo{
+      margin-left: 150px;
+      width: 980px;
+     height: 98px;
+}

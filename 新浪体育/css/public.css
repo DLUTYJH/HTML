@@ -1,0 +1,10 @@
+@font-face{
+    font-family:"仿宋";
+    src:url(./fonts/AdobeFangsongStd-Regular.otf);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "仿宋";
+    font-size: 16px;
+}

@@ -1,0 +1,35 @@
+#main{
+    width: 980px;
+    height: 1098px;
+    background-color: #FF0;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 150px;
+}
+#main #leftside{
+    margin-left: 10px;
+    width: 730px;
+    height: 280px;
+    background-color: #FFEFB6;
+    border-color:blueviolet;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+}
+#main #leftside #tableTop{
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+#main #leftside #tableTop a:link,a:visited{
+    text-decoration: none;
+    color: #000;
+}
+#main #leftside #tableTop a:hover{
+    text-decoration: underline;
+    color:deeppink;
+}
+#main #leftside #tableTop a:active ,#main #leftside #tableTop a:focus{
+    text-decoration: none;
+    color: #000;
+}

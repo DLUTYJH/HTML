@@ -1,0 +1,35 @@
+#nav{
+    width:980px;
+    height: 28px;
+    margin-left: 150px;
+    font-size: 14px;
+    background-color: #861700;
+    border-style: solid;
+    border-width: 1px;
+    border-color:chartreuse;
+}
+#nav #navleft{
+    padding-left: 10px;
+    width: 780px;
+    float: left;
+}
+#nav #navleft a:link,#nav #navleft a:visited{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+#nav #navleft a:hover{
+    text-decoration: underline;
+    color:deeppink;
+}
+#nav #navleft a:active,a:focus{
+    text-decoration: underline;
+    color: darkred;
+}
+#nav #navright{
+    height: 28px;
+    width: 200px;
+    margin-top: -28px;
+    margin-left: 780px;
+    text-align: right;
+}
