@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/public.css"/>
     </head>
     <body>
+       <a href="http:www.baidu.com"><img alt="fuck me Git" src="images/1dbSqT9ykm.png"></a>
         <div id="login">
             <div id="login-logo">
                <img alt="logo" src="images/logo.png"/>
@@ -29,5 +30,16 @@
                 <a href="#">马上注册</a>
             </div>
         </div>
+        <script type="text/javascript" src="tools/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="tools/sea.js"></script>
+        <script>
+           seajs.config({
+                base:"./js",
+                alias:{
+                    "jQuery":"./tools/jquery-1.11.2.min.js"
+                }
+            });
+            seajs.use("./js/main");
+        </script>
     </body>
 </html>
